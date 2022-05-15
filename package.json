@@ -1,12 +1,13 @@
 {
   "name": "react-page-guide",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "PC端页面引导组件",
   "main": "./lib/index.js",
   "files": [
     "dist",
     "lib",
-    "esm"
+    "esm",
+    "README.md"
   ],
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
