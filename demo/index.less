@@ -1,0 +1,51 @@
+:local {
+  .container {
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      .top {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #423f3f;
+
+        .pane {
+          width: 300px;
+          padding: 20px 30px;
+
+          .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 45px;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #1890ff;
+            box-shadow: 4px 4px 5px #8888886e;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+              background-color: #213afa;
+            }
+          }
+
+          .btn_active {
+            background-color: #213afa;
+          }
+
+          .desc {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .container_ano {
+    height: 100%;
+    overflow: auto;
+  }
+}
