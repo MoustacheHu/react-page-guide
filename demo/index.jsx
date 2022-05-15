@@ -1,21 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Outlet, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import Demo1 from './demo1';
 import Demo2 from './demo2';
 import Demo3 from './demo3';
 
 import styles from './index.less';
-
-const DefaultPage = () => {
-  const navigate = useNavigate();
-  useEffect(() => {
-    console.log('阿达撒');
-    navigate('/demo1');
-  }, []);
-  return <div>11111111</div>;
-};
 
 const IndexPage = () => {
   const navigate = useNavigate();

@@ -1,6 +1,9 @@
 node_modules/
 dist/
+esm/
+lib/
 
 package-lock.json
+yarn-error.log
 
 .idea/

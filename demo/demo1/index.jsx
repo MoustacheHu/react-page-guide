@@ -4,6 +4,7 @@ import createPageGuide from '../../src';
 import styles from './index.less';
 
 const Index = () => {
+  // 触发引导页
   const handleBeginGuide = () => {
     const driver = createPageGuide({
       steps: [

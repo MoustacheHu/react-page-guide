@@ -10,6 +10,7 @@ const Index = () => {
   }, []);
 
   const handleBeginGuide = () => {
+    document.getElementById('container').scrollTo(0, 0);
     document.getElementById('middle').scrollIntoView = null;
     const driver = createPageGuide({
       steps: [

@@ -5,6 +5,7 @@ import styles from './index.less';
 
 const Index = () => {
   const handleBeginGuide = () => {
+    document.getElementById('wrapper').scrollTo(0, 0);
     const driver = createPageGuide({
       steps: [
         {
@@ -37,14 +38,14 @@ const Index = () => {
         if (step === 1) {
           document.getElementById('wrapper').scrollTo(0, 0);
         } else if (step === 2) {
-          document.getElementById('wrapper').scrollTo(0, 400);
+          document.getElementById('wrapper').scrollTo(0, 200);
         }
         driver.movePrevious();
       },
       onNext: (_, step) => {
         if (step === 2) {
           driver.preventMove();
-          document.getElementById('wrapper').scrollTo(0, 400);
+          document.getElementById('wrapper').scrollTo(0, 200);
           driver.moveNext();
         }
       }
